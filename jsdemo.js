@@ -5,3 +5,6 @@ let hobby= "Gaming";
 console.log(`Name: ${name}`);
 console.log(`School: ${school}`);
 console.log(`Hobby: ${hobby}`);
+document.getElementbyId("name").inmerHTML = "<b>Name; </b>"+name;
+document.getElementbyId("school").inmerHTML = "<b>School; </b>"+school;
+document.getElementbyId("hobby").inmerHTML = "<b>Hobby; </b>"+hobby;
