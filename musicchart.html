@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Music Chart</title>
+     <style>
+      body{
+        background-color:#fc035e;
+      }
+    </style>
+     <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+     <center> 
+       <h1>My Favorite Crystal Castles Songs</h1>
+       <div id="plot"></div>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/Z-d4Q60SC_g?si=x7yk3gBe_KeNCrVB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/IGhnAXaDpu8?si=UWPLbo3jvOF0xou1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/RzEHkQIy1i8?si=9rWjoVNyPncY-5Pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       
+   <p><a href="index.html">Return to the homepage</a></p>
+   <hr> 
+   <p>&copy; STEM Prep 2026</p>
+    </center>
+    <script> 
+      var songs=["Suffocation","Untrust Us","Vanished"];
+      var views=[17005726,36216809,69699525];
+      var trace={
+        x:songs,
+        y:views,
+        type:"bar"
+      };
+      var data=[trace];
+      var layout={title:"My Favorite Crystal Castles Songs"};
+      Plotly.newPlot('plot",data,layout);
+      </script>
+  </body>
+</html>
