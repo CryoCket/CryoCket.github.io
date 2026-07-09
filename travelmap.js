@@ -1,8 +1,8 @@
 //43°28' N latitude and 142°31' E longitude
 var coordinates = [43.28, 142.31];
-var place1 = [43.76805, 142.47978]
-var place2 = [43.059722, 141.346389]
-var place3 = [43.05698, 141.35086] 
+var place1 = [43.76805, 142.47978];
+var place2 = [43.059722, 141.346389];
+var place3 = [43.05698, 141.35086];
 var map = L.map('map').setView(coordinates, 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
